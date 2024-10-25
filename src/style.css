@@ -1,0 +1,60 @@
+body {
+  font-size: 22px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.whoPlaysFirst {
+  display: flex;
+  justify-content: center;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #022937;
+  border-radius: 25px;
+  width: 150px;
+  border: 1px
+}
+
+button a {
+  text-decoration-line: none;
+  color: white;
+}
+
+
+/* fieldset {
+  display: inline-block;
+} */
+
+.player2 {
+  margin-top: 30px;
+}
+
+hr {
+  margin-top: 40px;
+  width: 750px;
+  background-color: slategray;
+}
+
+fieldset {
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+}

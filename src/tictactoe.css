@@ -1,0 +1,84 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.playersInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.player1 {
+  margin-right: 100px;
+}
+
+.player1 #p1Mark,
+.player2 #p2Mark {
+  text-align: center;
+  padding-left: -6px;
+  font-size: 25px;
+}
+
+.currentIndicator {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.text-center {
+  color: white;
+  margin-top: 40px;
+  padding-left: -20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.board,
+btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.row {
+  border: 1px solid white;
+  width: 300px;
+  height: 100px;
+  display: table;
+  color: white;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  font-size: 50px;
+  text-align: center;
+  border: 1px solid white;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+#resetBtn {
+  padding: 10px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+#previousPage {
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+
+#previousPage:hover {
+  cursor: pointer;
+}

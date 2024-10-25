@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tick Tack Toe</title>
+  <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <button id="previousPage">previous page</button>
+  <h1 class="text-center">Tick Tac Toe</h1>
+  <div class="playersInfo">
+    <div class="player1">
+      <p class="mark"></p>
+      <p class="undoCount"></p>
+    </div>
+
+    <div class="player2">
+      <p class="mark"></p>
+      <p class="undoCount"></p>
+    </div>
+  </div>
+
+  <!-- 게임보드 시작 -->
+  <div class="board">
+    <div class="row">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <div class="row">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <div class="row">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <button id="resetBtn">Reset</button>
+  </div>
+  <!-- 게임보드 끝 -->
+
+  <script type="module" src="./src/tictactoe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/assets/vaco_symbol.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tick Tack Toe</title>
+  <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+</head>
+
+<body>
+  <h1>Tick Tac Toe</h1>
+
+  <!-- players 설정관련 시작 -->
+  <div class="players">
+    <div class="player1">
+      <div style="width: 130px;">
+        Player 1
+      </div>
+      <!-- 플레이어 1은 X - 파랑, 플레이어 2는 O - 빨강 입니다. -->
+      <fieldset>
+        <legend>Select Mark Type</legend>
+        <div>
+          <input type="radio" id="O" name="type1" value="O" />
+          <label for="O">O</label>
+        </div>
+        <div class="markPlayerOption">
+          <input type="radio" id="X" name="type1" value="X" checked />
+          <label for="X">X</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Mark Color</legend>
+        <div>
+          <input style="color: #f85b6b" type="radio" id="red" name="color1" value="#f85b6b" />
+          <label style="color: #f85b6b" for="red">OrangyRed</label>
+        </div>
+        <div>
+          <input style="color: #42fbde" type="radio" id="blue" name="color1" value="#42fbde" checked />
+          <label style="color: #42fbde" for="blue">SkyBlue</label>
+        </div>
+      </fieldset>
+
+      <hr />
+
+      <div class="player2">
+        <div style="width: 130px;">
+          Player 2
+        </div>
+        <fieldset>
+          <legend>Select Mark Type</legend>
+          <div>
+            <input type="radio" id="O" name="type2" value="O" checked />
+            <label for="O">O</label>
+          </div>
+          <div>
+            <input type="radio" id="X" name="type2" value="X" />
+            <label for="X">X</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Select Mark Color</legend>
+          <div>
+            <input style="color: #f85b6b" type="radio" id="red" name="color2" value="#f85b6b" checked />
+            <label style="color: #f85b6b" for="red">OrangyRed</label>
+          </div>
+          <div>
+            <input style="color: #42fbde" type="radio" id="blue" name="color2" value="#42fbde" />
+            <label style="color: #42fbde" for="blue">SkyBlue</label>
+          </div>
+        </fieldset>
+
+      </div>
+
+    </div>
+
+    <!-- players 설정관련 끝 -->
+
+    <div style="margin-bottom: 50px"></div>
+
+
+    <!-- random하게 누가먼저 게임을 시작하는가 시작 -->
+
+    <div class="whoPlaysFirst">who plays first?
+      <div style="margin-left: 30px">
+        <input type="radio" id="player1" name="playFirst" value="player1" />
+        <label for="player1">Player #1</label>
+      </div>
+      <div style="margin-left: 20px">
+        <input type="radio" id="player2" name="playFirst" value="player2" />
+        <label for="player2">Player #2</label>
+      </div>
+    </div>
+    <!-- random하게 누가먼저 게임을 시작하는가 끝 -->
+
+    <!-- 다음 화면 넘김 버튼 시작 -->
+    <button>
+      <a href="tictactoe.html" id="linkToScreenChange"> Start</a>
+    </button>
+    <!-- 다음 화면 넘김 버튼 끝 -->
+
+    <script type="module" src="./src/index.js"></script>
+</body>
+
+</html>
